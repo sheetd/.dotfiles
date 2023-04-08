@@ -6,3 +6,5 @@
 [user]
 	name = sheetd
 	email = neil@sheetd.com
+[core]
+	editor = nano
