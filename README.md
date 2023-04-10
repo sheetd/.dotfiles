@@ -46,7 +46,7 @@ cd ~/.dotfiles && brew bundle
 Open a CMD terminal as admin
 ```
 cd /Users/neil/
-mklink /H ".gitconfig" "./.dotfiles/.gitconfig"
+mklink /H ".gitconfig" "./.dotfiles/.gitconfig-win"
 ```
 
 # TODO List
