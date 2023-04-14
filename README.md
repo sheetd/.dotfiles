@@ -1,4 +1,4 @@
-# New computer set-up
+# New mac os computer set-up
 
 1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
 
@@ -41,13 +41,6 @@ brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```
 
-
-# Windows install (NOT WORKING)
-Open a CMD terminal as admin
-```
-cd /Users/neil/
-mklink /H ".gitconfig" "./.dotfiles/.gitconfig-win"
-```
 
 # TODO List
 
