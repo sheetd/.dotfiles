@@ -26,7 +26,13 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 
-4. Install Homebrew, followed by the software listed in the Brewfile.
+4. Setup 1Password CLI
+```zsh
+# Install the 1Password CLI per their docs
+# TODO: add symlink for .ssh set-up
+```
+
+5. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```zsh
 # These could also be in an install script.
