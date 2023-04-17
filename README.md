@@ -10,10 +10,10 @@ xcode-select --install
 
 ```zsh
 # Use SSH (if set up)...
-git clone neil@sheetd.com:sheet/.dotfiles.git ~/.dotfiles
+git clone neil@sheetd.com:sheet/.dotfiles-mac.git ~/.dotfiles-mac
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
+git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 ```
 
 3. Create symlinks in the Home directory to the real files in the repo.
@@ -22,8 +22,8 @@ git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
 # There are better and less manual ways to do this;
 # investigate install scripts and bootstrapping tools.
 
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles-mac/.zshrc ~/.zshrc
+ln -s ~/.dotfiles-mac/.gitconfig ~/.gitconfig
 ```
 
 4. Setup 1Password CLI
