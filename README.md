@@ -16,14 +16,10 @@ git clone neil@sheetd.com:sheet/.dotfiles-mac.git ~/.dotfiles-mac
 git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 ```
 
-3. Create symlinks in the Home directory to the real files in the repo.
+3. Run the init script to set-up links
 
 ```zsh
-# There are better and less manual ways to do this;
-# investigate install scripts and bootstrapping tools.
-
-ln -s ~/.dotfiles-mac/.zshrc ~/.zshrc
-ln -s ~/.dotfiles-mac/.gitconfig ~/.gitconfig
+sh ~/.dotfiles-mac/init.sh
 ```
 
 4. Setup 1Password CLI
