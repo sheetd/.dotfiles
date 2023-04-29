@@ -10,7 +10,7 @@ xcode-select --install
 
 ```zsh
 # Use SSH (if set up)...
-git clone neil@sheetd.com:sheetd/.dotfiles-mac.git ~/.dotfiles-mac
+git clone git@github.com:sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 
 # ...or use HTTPS and switch remotes later.
 git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
