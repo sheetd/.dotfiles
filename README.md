@@ -10,7 +10,7 @@ xcode-select --install
 
 ```zsh
 # Use SSH (if set up)...
-git clone neil@sheetd.com:sheet/.dotfiles-mac.git ~/.dotfiles-mac
+git clone neil@sheetd.com:sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 
 # ...or use HTTPS and switch remotes later.
 git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
@@ -40,7 +40,7 @@ sh ~/.dotfiles-mac/init.sh
 brew bundle --file ~/.dotfiles/Brewfile
 
 # ...or move to the directory first.
-cd ~/.dotfiles && brew bundle
+cd ~/.dotfiles-mac && brew bundle
 ```
 
 
