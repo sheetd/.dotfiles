@@ -30,7 +30,6 @@ cask "rar"
 
 # VS Code
 vscode "amazonwebservices.aws-toolkit-vscode"
-vscode "Darfka.vbscript"
 vscode "esbenp.prettier-vscode"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-ssh"
