@@ -37,7 +37,7 @@ sh ~/.dotfiles-mac/init.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Then pass in the Brewfile location...
-brew bundle --file ~/.dotfiles/Brewfile
+brew bundle --file ~/.dotfiles-mac/Brewfile
 
 # ...or move to the directory first.
 cd ~/.dotfiles-mac && brew bundle
