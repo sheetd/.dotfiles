@@ -41,3 +41,12 @@ else
 	ln -s ~/.dotfiles-mac/.zshrc ~/.zshrc
 	echo $OK
 fi
+
+# SSH
+if [ -e ~/.ssh ]
+then
+	echo $KO
+else
+	ln -s ~/.dotfiles-mac/.ssh ~/.ssh
+	echo $OK
+fi
