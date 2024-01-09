@@ -25,7 +25,6 @@ sh ~/.dotfiles-mac/init.sh
 4. Setup 1Password CLI
 ```zsh
 # Install the 1Password CLI per their docs
-# TODO: add symlink for .ssh set-up
 ```
 
 5. Install Homebrew, followed by the software listed in the Brewfile.
