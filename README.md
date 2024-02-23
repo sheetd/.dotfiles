@@ -16,15 +16,16 @@ git clone git@github.com:sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 ```
 
-3. Run the init script to set-up links
+3. Install OMZ
 
 ```zsh
-sh ~/.dotfiles-mac/init.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 4. Setup 1Password CLI
+
 ```zsh
-# Install the 1Password CLI per their docs
+# https://developer.1password.com/docs/cli/get-started/
 ```
 
 5. Install Homebrew, followed by the software listed in the Brewfile.
@@ -42,6 +43,11 @@ brew bundle --file ~/.dotfiles-mac/Brewfile
 cd ~/.dotfiles-mac && brew bundle
 ```
 
+6. Run the init script to set-up links
+
+```zsh
+sh ~/.dotfiles-mac/init.sh
+```
 
 # TODO List
 
@@ -53,5 +59,4 @@ cd ~/.dotfiles-mac && brew bundle
 - Create a [bootable USB installer for macOS](https://support.apple.com/en-us/HT201372).
 - Integrate other cloud services into your Dotfiles process (Dropbox, Google Drive, etc.).
 - Find inspiration and examples in other Dotfiles repositories at [dotfiles.github.io](https://dotfiles.github.io/).
-- And last, but hopefully not least, [**take my course, *Dotfiles from Start to Finish-ish***](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/?referralCode=445BE0B541C48FE85276 "Learn Dotfiles from Start to Finish-ish on Udemy"
-)!
+- And last, but hopefully not least, [**take my course, *Dotfiles from Start to Finish-ish***](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/?referralCode=445BE0B541C48FE85276 "Learn Dotfiles from Start to Finish-ish on Udemy")!
