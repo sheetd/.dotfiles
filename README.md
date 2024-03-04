@@ -22,13 +22,19 @@ git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-4. Setup 1Password CLI
+4. Setup 1Password CLI (as described in the docs)
 
 ```zsh
 # https://developer.1password.com/docs/cli/get-started/
 ```
 
-5. Install Homebrew, followed by the software listed in the Brewfile.
+5. Run the init script to set-up links
+
+```zsh
+python3 ~/.dotfiles-mac/init.py
+```
+
+6. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```zsh
 # These could also be in an install script.
@@ -37,27 +43,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Then pass in the Brewfile location...
-brew bundle --file ~/.dotfiles-mac/Brewfile
-
-# ...or move to the directory first.
-cd ~/.dotfiles-mac && brew bundle
-```
-
-6. Run the init script to set-up links
-
-```zsh
-sh ~/.dotfiles-mac/init.sh
+brew bundle
 ```
 
 # TODO List
-
-- move init script to Python code
-- Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
-- Organize these growing steps into multiple script files.
-- Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
-- Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
-- Make a checklist of steps to decommission your computer before wiping your hard drive.
-- Create a [bootable USB installer for macOS](https://support.apple.com/en-us/HT201372).
-- Integrate other cloud services into your Dotfiles process (Dropbox, Google Drive, etc.).
-- Find inspiration and examples in other Dotfiles repositories at [dotfiles.github.io](https://dotfiles.github.io/).
-- And last, but hopefully not least, [**take my course, _Dotfiles from Start to Finish-ish_**](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/?referralCode=445BE0B541C48FE85276 "Learn Dotfiles from Start to Finish-ish on Udemy")!
+- [x] move init script to Python code
+- [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
+- [ ] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
+- [ ] Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
+- [ ] Make a checklist of steps to decommission your computer before wiping your hard drive.
+- [ ] Create a [bootable USB installer for macOS](https://support.apple.com/en-us/HT201372).
+- [ ] Find inspiration and examples in other Dotfiles repositories at [dotfiles.github.io](https://dotfiles.github.io/).
+- [ ] And last, but hopefully not least, [**take my course, _Dotfiles from Start to Finish-ish_**](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/?referralCode=445BE0B541C48FE85276 "Learn Dotfiles from Start to Finish-ish on Udemy")!

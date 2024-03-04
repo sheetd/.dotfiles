@@ -19,7 +19,7 @@ def create_sym_link(source, destination):
 paths = ("/Users/neil/.dotfiles-mac/.gitconfig", "/Users/neil/.gitconfig", \
 "/Users/neil/.dotfiles-mac/.zshrc", "/Users/neil/.zshrc", \
 "/Users/neil/.dotfiles-mac/.ssh", "/Users/neil/.ssh", \
-"/Users/neil/.dotfiles-mac/Brewfile", "/Users/neil/.Brewfile", \
+"/Users/neil/.dotfiles-mac/Brewfile", "/Users/neil/Brewfile", \
 "/Users/neil/.dotfiles-mac/.aws", "/Users/neil/.aws" \
 )
 
