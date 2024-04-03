@@ -1,5 +1,4 @@
 # Creates symbolic links for the files/folders in the .dotfiles directory
-
 import os
 
 # File paths to process
