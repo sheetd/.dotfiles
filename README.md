@@ -1,4 +1,4 @@
-# New mac os computer set-up
+# New Mac OS computer set-up
 
 1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
 
@@ -10,10 +10,10 @@ xcode-select --install
 
 ```zsh
 # Use SSH (if set up)...
-git clone git@github.com:sheetd/.dotfiles-mac.git ~/.dotfiles-mac
+git clone git@github.com:sheetd/.dotfiles.git ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/sheetd/.dotfiles-mac.git ~/.dotfiles-mac
+git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
 ```
 
 3. Install OMZ
@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 5. Run the init script to set-up links
 
 ```zsh
-python3 ~/.dotfiles-mac/init.py
+python3 ~/.dotfiles/init.py
 ```
 
 6. Install Homebrew, followed by the software listed in the Brewfile.
@@ -46,7 +46,7 @@ python3 ~/.dotfiles-mac/init.py
 brew bundle
 ```
 
-# TODO List
+# TODO Mac
 - [x] move init script to Python code
 - [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
 - [ ] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
@@ -59,16 +59,16 @@ brew bundle
 
 
 
-# New linux os set-up
+# New Linux os set-up
 
 1. Clone repo into new hidden directory.
 
 ```zsh
 # Use SSH (if set up)...
-git clone git@github.com:sheetd/.dotfiles-linux.git ~/.dotfiles-linux
+git clone git@github.com:sheetd/.dotfiles.git ~/.dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/sheetd/.dotfiles-linux.git ~/.dotfiles-linux
+git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
 ```
 
 2. If remote host, add `authorized_keys` file to the `~/.ssh` directory
@@ -82,9 +82,35 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 4. Run the init script to set-up links
 
 ```zsh
-sh ~/.dotfiles-linux/init.py
+sh ~/.dotfiles/init.py
 ```
 
-# TODO
+# TODO Linux
 - [X] Move init script to Python code
 - [ ] Typical apt installers (omz, etc.)
+
+
+# New Windows computer set-up
+
+1. Clone repo into new hidden directory
+```powershell
+# Use SSH (if set up)...
+git clone git@github.com:sheetd/.dotfiles-win.git ~/.dotfiles-win
+
+# ...or use HTTPS and switch remotes later.
+git clone https://github.com/sheetd/.dotfiles-win.git ~/.dotfiles-win
+```
+
+2. Create symlinks to config files
+Open a CMD terminal as admin
+```bat
+cd /Users/neil/
+mklink /H ".gitconfig" "./.dotfiles/.gitconfig"
+mklink /J ".ssh" "./.dotfiles/.ssh"
+```
+
+3. Install typical apps (1password CLI)
+
+# TODO Windows
+- [ ] Typical installers (using winget?)
+- [ ] replace links section with init script
