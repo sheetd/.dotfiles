@@ -1,3 +1,4 @@
 Brewfile.lock*
 .DS_Store
 known_hosts*
+authorized_keys

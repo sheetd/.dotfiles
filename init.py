@@ -2,11 +2,11 @@
 import os
 
 # File paths to process
-paths = ("/Users/neil/.dotfiles-mac/.gitconfig", "/Users/neil/.gitconfig", \
-"/Users/neil/.dotfiles-mac/.zshrc", "/Users/neil/.zshrc", \
-"/Users/neil/.dotfiles-mac/.ssh", "/Users/neil/.ssh", \
-"/Users/neil/.dotfiles-mac/Brewfile", "/Users/neil/Brewfile", \
-"/Users/neil/.dotfiles-mac/.aws", "/Users/neil/.aws" \
+paths = ("/Users/neil/.dotfiles/.gitconfig", "/Users/neil/.gitconfig", \
+"/Users/neil/.dotfiles/.zshrc", "/Users/neil/.zshrc", \
+"/Users/neil/.dotfiles/.ssh", "/Users/neil/.ssh", \
+"/Users/neil/.dotfiles/mac/Brewfile", "/Users/neil/Brewfile", \
+"/Users/neil/.dotfiles/.aws", "/Users/neil/.aws" \
 )
 
 # Function to create links
@@ -29,14 +29,14 @@ for i in range(0, len(paths), 2):
 
 # TODO: setup variables for the path prefixes like
 path_home = "/Users/neil"
-path_repo = "/Users/neil/.dotfiles-mac"
+path_repo = "/Users/neil/.dotfiles"
 
 # ------------------------------------------------
 
 # Testing area
 '''
 # Simple Function
-path1 = "/Users/neil/.dotfiles-mac/.gitconfig"
+path1 = "/Users/neil/.dotfiles/.gitconfig"
 path2 = "/Users/neil/.gitconfig"
 create_sym_link(path1, path2)
 
