@@ -1,5 +1,7 @@
 # to update this: brew bundle --force cleanup
 # to create a new one: brew bundle dump
+# https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+
 # Homebrew defaults
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -8,19 +10,20 @@ tap "homebrew/services"
 
 tap "1password/tap"
 tap "aws/tap"
-tap "nextdns/tap"
 tap "teamookla/speedtest"
 
 # Brew
 brew "ansible"
 brew "ffmpeg"
 brew "figlet"
+brew "gh"
 brew "groff"
 brew "htop"
+brew "iperf3"
 brew "libdvdcss"
 brew "mas"
 brew "node"
-brew "nextdns/tap/nextdns"
+brew "wakeonlan"
 brew "teamookla/speedtest/speedtest"
 
 # Casks
@@ -48,8 +51,8 @@ cask "rar"
 # VS Code
 # vscode "amazonwebservices.aws-toolkit-vscode"
 # vscode "esbenp.prettier-vscode"
-# vscode "github.copilot"
-# vscode "github.copilot-chat"
+# vscode "github.codespaces"
+# vscode "iancooper.code-zpl"
 # vscode "ms-azuretools.vscode-docker"
 # vscode "ms-python.debugpy"
 # vscode "ms-python.python"
@@ -61,4 +64,6 @@ cask "rar"
 # vscode "ms-vscode.remote-explorer"
 # vscode "ms-vscode.remote-repositories"
 # vscode "oderwat.indent-rainbow"
+# vscode "redhat.vscode-xml"
 # vscode "trunk.io"
+# vscode "vue.volar"
