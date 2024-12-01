@@ -4,16 +4,15 @@ import os
 home_path = os.path.expanduser("~")
 print(home_path)
 
-
 # File paths to process
 path_source = "/home/neil/.dotfiles/"
 path_destination = "/home/neil/"
 
 paths = (
+  path_source + ".aws", path_destination + ".aws", \
   path_source + ".gitconfig", path_destination + ".gitconfig", \
-  path_source + ".zshrc", path_destination + ".zshrc", \
   path_source + ".ssh", path_destination + ".ssh", \
-  path_source + ".aws", path_destination + ".aws"
+  path_source + ".zshrc", path_destination + ".zshrc"
 )
 
 # Function to create links
