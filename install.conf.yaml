@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.aws: .aws
+    ~/.gitconfig: .gitconfig
+    ~/.ssh: .ssh
+    ~/.zshrc: .zshrc
+    ~/Brewfile: mac/Brewfile
+
+# - create:
+#     - ~/testing
+
+- shell:
+    - op inject -i .aws/credentials.tpl -o .aws/credentials
