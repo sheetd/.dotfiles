@@ -1,5 +1,7 @@
 # Dotfiles repo specific
 authorized_keys
+.aws/credentials
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,homebrew,ssh
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,homebrew,ssh

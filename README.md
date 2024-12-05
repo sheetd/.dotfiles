@@ -44,6 +44,11 @@ python3 ~/.dotfiles/mac/init.py
 brew bundle
 ```
 
+7. Update local ENV with secrets from 1Password
+```zsh
+op inject -i .aws/credentials.tpl -o .aws/credentials
+```
+
 # TODO Mac
 - [X] move init script to Python code
 - [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
