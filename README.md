@@ -9,10 +9,6 @@ xcode-select --install
 2. Clone repo into new hidden directory.
 
 ```zsh
-# Use SSH (if set up)...
-git clone git@github.com:sheetd/.dotfiles.git ~/.dotfiles
-
-# ...or use HTTPS and switch remotes later.
 git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
 ```
 
@@ -29,7 +25,8 @@ https://developer.1password.com/docs/cli/get-started/
 5. Run the init script to set-up links
 
 ```zsh
-python3 ~/.dotfiles/mac/init.py
+cd ~/dotfiles
+./install
 ```
 
 6. Install Homebrew, followed by the software listed in the Brewfile.
@@ -44,15 +41,11 @@ python3 ~/.dotfiles/mac/init.py
 brew bundle
 ```
 
-7. Update local ENV with secrets from 1Password
-```zsh
-op inject -i .aws/credentials.tpl -o .aws/credentials
-```
-
 # TODO Mac
+- [ ] move omz to a submodule?
 - [X] move init script to Python code
 - [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
-- [ ] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
+- [X] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
 - [ ] Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
 
 
@@ -61,10 +54,6 @@ op inject -i .aws/credentials.tpl -o .aws/credentials
 1. Clone repo into new hidden directory.
 
 ```zsh
-# Use SSH (if set up)...
-git clone git@github.com:sheetd/.dotfiles.git ~/.dotfiles
-
-# ...or use HTTPS and switch remotes later.
 git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles
 ```
 
