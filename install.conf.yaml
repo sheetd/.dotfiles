@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.aws: .aws
+    ~/.gitconfig: .gitconfig
+    ~/.ssh: .ssh
+    ~/.zshrc: .zshrc
+    # TODO: branch this for different platforms
+    ~/Brewfile: mac/Brewfile
+
+# - create:
+#     - ~/testing
+
+- shell:
+    # pulls passwords from 1Password into local ENV
+    - op inject -i .aws/credentials.tpl -o .aws/credentials
