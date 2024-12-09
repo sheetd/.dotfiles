@@ -5,12 +5,14 @@ set -e
 CONFIGS="install.conf.yaml"
 
 case $(uname) in
-Darwin*)
-	CONFIGS+=("mac.conf.yaml")
-	;;
-Linux*)
-	CONFIGS+=("linux.conf.yaml")
-	;;
+	Darwin*)
+		CONFIGS+=("mac.conf.yaml")
+		;;
+	Linux*)
+		CONFIGS+=("linux.conf.yaml")
+		;;
+	*)
+		;;
 esac
 
 DOTBOT_DIR="dotbot"
