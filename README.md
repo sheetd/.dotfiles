@@ -68,7 +68,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 4. Run the init script to set-up links
 
 ```zsh
-cd ~/dotfiles
+  cd ~/dotfiles
 ./install
 ```
 
