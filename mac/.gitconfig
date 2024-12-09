@@ -2,6 +2,8 @@
 	name = sheetd
 	email = sheetd@users.noreply.github.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFl1s9y+hPPuh1PnOOnKkRgcWG55RcDMouo7/HIPmyeN
+[color]
+  ui = auto
 [core]
 	editor = code
 [pull]
