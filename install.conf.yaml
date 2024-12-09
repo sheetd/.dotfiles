@@ -1,13 +1,14 @@
 - defaults:
     link:
-      relink: true
+        relink: true
 
 - clean: ["~"]
 
 - link:
     ~/.aws: .aws
     ~/.ssh: .ssh
-    ~/.zshrc: .zshrc
+    ~/.zshrc: shell/.zshrc
+    # ~/.oh-my-zsh: shell/ohmyzsh/
 
 - create:
     - ~/github
