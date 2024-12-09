@@ -1,0 +1,17 @@
+[user]
+	name = sheetd
+	email = sheetd@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFl1s9y+hPPuh1PnOOnKkRgcWG55RcDMouo7/HIPmyeN
+[core]
+	editor = nano
+[pull]
+	rebase = false
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

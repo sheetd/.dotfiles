@@ -42,12 +42,12 @@ brew bundle
 ```
 
 # TODO Mac
-- [ ] move omz to a submodule?
-- [X] move init script to Python code
-- [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
-- [X] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
-- [ ] Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
 
+- [ ] move omz to a submodule?
+- [x] move init script to Python code
+- [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
+- [x] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
+- [ ] Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
 
 # New Linux os set-up
 
@@ -68,17 +68,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 4. Run the init script to set-up links
 
 ```zsh
-sh ~/.dotfiles/linux/init.py
+cd ~/dotfiles
+./install
 ```
 
 # TODO Linux
-- [X] Move init script to Python code
-- [ ] Add typical apt installers (omz, etc.) to script
 
+- [x] Move init script to Python code
+- [ ] Add typical apt installers (omz, etc.) to script
 
 # New Windows computer set-up
 
 1. Clone repo into new hidden directory
+
 ```powershell
 # Use SSH (if set up)...
 git clone git@github.com:sheetd/.dotfiles.git ~/.dotfiles-win
@@ -88,7 +90,8 @@ git clone https://github.com/sheetd/.dotfiles.git ~/.dotfiles-win
 ```
 
 2. Create symlinks to config files
-Open a CMD terminal as admin
+   Open a CMD terminal as admin
+
 ```bat
 cd /Users/neil/
 mklink /H ".gitconfig" "./.dotfiles/win/.gitconfig"
@@ -98,5 +101,6 @@ mklink /J ".ssh" "./.dotfiles/.ssh"
 3. Install typical apps (1password CLI)
 
 # TODO Windows
+
 - [ ] Typical installers (using winget?)
 - [ ] replace links section with init script

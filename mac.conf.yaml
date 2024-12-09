@@ -1,0 +1,11 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.gitconfig: mac/.gitconfig
+    ~/Brewfile: mac/Brewfile
+
+- shell:
+    # pulls passwords from 1Password into local ENV
+    - op inject -i .aws/credentials.tpl -o .aws/credentials
