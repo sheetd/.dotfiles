@@ -8,7 +8,7 @@
     ~/.aws: .aws
     ~/.ssh: .ssh
     ~/.zshrc: shell/.zshrc
-    ~/.oh-my-zsh: shell/ohmyzsh/
+    # ~/.oh-my-zsh: shell/ohmyzsh/
 
 - create:
     - ~/github
