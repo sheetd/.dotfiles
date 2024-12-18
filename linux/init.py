@@ -9,23 +9,29 @@ path_source = "/home/neil/.dotfiles/"
 path_destination = "/home/neil/"
 
 paths = (
-  path_source + ".aws", path_destination + ".aws", \
-  path_source + ".gitconfig", path_destination + ".gitconfig", \
-  path_source + ".ssh", path_destination + ".ssh", \
-  path_source + ".zshrc", path_destination + ".zshrc"
+    path_source + ".aws",
+    path_destination + ".aws",
+    path_source + ".gitconfig",
+    path_destination + ".gitconfig",
+    path_source + ".ssh",
+    path_destination + ".ssh",
+    path_source + ".zshrc",
+    path_destination + ".zshrc",
 )
+
 
 # Function to create links
 def create_sym_link(source, destination):
-  try:
-    os.symlink(source, destination)
-    print("✅ Link created:", source, "--> ", destination)
-  except FileExistsError:
-    print("🛑 File already exists:", destination)
+    try:
+        os.symlink(source, destination)
+        print("✅ Link created:", source, "--> ", destination)
+    except FileExistsError:
+        print("🛑 File already exists:", destination)
+
 
 # Create the links
 print("Creating links:")
 for i in range(0, len(paths), 2):
-  path1 = paths[i]
-  path2 = paths[i+1]
-  create_sym_link(path1, path2)
+    path1 = paths[i]
+    path2 = paths[i + 1]
+    create_sym_link(path1, path2)
