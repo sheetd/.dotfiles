@@ -5,3 +5,4 @@ rules:
   key-duplicates: {}
   octal-values:
     forbid-implicit-octal: true
+  indentation: { spaces: 2 }
