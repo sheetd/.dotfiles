@@ -41,13 +41,21 @@ cd ~/dotfiles
 brew bundle
 ```
 
-# TODO Mac
+## TODO Mac
 
 - [ ] move omz to a submodule?
 - [x] move init script to Python code
 - [ ] Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
 - [x] Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
 - [ ] Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
+
+## Upgrading dotbot module
+
+- create a new git branch
+- ```cd ~/.dotfiles```
+- ```git submodule update --remote```
+- commit a change to the branch
+- merge the branch back to main
 
 # New Linux os set-up
 
@@ -72,7 +80,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ./install
 ```
 
-# TODO Linux
+## TODO Linux
 
 - [x] Move init script to Python code
 - [ ] Add typical apt installers (omz, etc.) to script
@@ -100,7 +108,7 @@ mklink /J ".ssh" "./.dotfiles/.ssh"
 
 3. Install typical apps (1password CLI)
 
-# TODO Windows
+## TODO Windows
 
 - [ ] Typical installers (using winget?)
 - [ ] replace links section with init script
