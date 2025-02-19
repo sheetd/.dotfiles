@@ -1,6 +1,6 @@
 - defaults:
-  link:
-    relink: true
+    link:
+        relink: true
 
 - link:
-  ~/.gitconfig: linux/.gitconfig
+    ~/.gitconfig: linux/.gitconfig
