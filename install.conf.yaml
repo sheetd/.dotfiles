@@ -5,8 +5,8 @@
 - clean: ["~"]
 
 - link:
-    ~/.aws: .aws
-    ~/.ssh: .ssh
+    ~/.aws: shell/.aws
+    ~/.ssh: shell/.ssh
     ~/.zshrc: shell/.zshrc
     # ~/.oh-my-zsh: shell/ohmyzsh/
 
