@@ -5,4 +5,4 @@
 
 - shell:
     # pulls passwords from 1Password into local ENV for AWS credentials
-    - op inject -i .aws/credentials.tpl -o .aws/credentials
+    - op inject -i shell/.aws/credentials.tpl -o shell/.aws/credentials
