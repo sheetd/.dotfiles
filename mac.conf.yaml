@@ -1,6 +1,7 @@
 - link:
     ~/.gitconfig: mac/.gitconfig
     ~/Brewfile: mac/Brewfile
+    ~/.warp: mac/.warp
 
 - shell:
     # pulls passwords from 1Password into local ENV for AWS credentials
