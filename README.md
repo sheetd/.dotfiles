@@ -52,8 +52,8 @@ brew bundle
 ## Upgrading dotbot module
 
 - create a new git branch
-- ```cd ~/.dotfiles```
-- ```git submodule update --remote```
+- `cd ~/.dotfiles`
+- `git submodule update --remote`
 - commit a change to the branch
 - merge the branch back to main
 
